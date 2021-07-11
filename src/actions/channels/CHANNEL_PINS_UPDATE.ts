@@ -14,6 +14,8 @@ export default class CoreAction extends Action {
 		const channel = guild ? guild.channels.get(data.d.channel_id) : this.client.dms.get(data.d.channel_id);
 		if (!channel || !isTextBasedChannel(channel)) return;
 
+		channel.lastPinTimestamp = data.d.last_pin_timestamp ?? null;
+
 		this.client.emit(this.clientEvent, channel, this.parseDate(data.d.last_pin_timestamp));
 	}
 

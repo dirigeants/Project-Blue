@@ -44,6 +44,12 @@ export class DMChannel extends Channel {
 	public lastMessageID!: string | null;
 
 	/**
+	 * When the last pinned message was pinned.
+	 * @since 0.0.3
+	 */
+	public lastPinTimestamp!: string | null;
+
+	/**
 	 * The recipients of the DM.
 	 * @since 0.0.1
 	 */
@@ -151,6 +157,7 @@ export class DMChannel extends Channel {
 		// eslint-disable-next-line dot-notation
 		this.recipients = (data.recipients as APIUserData[]).map(user => this.client.users['_add'](user));
 		this.lastMessageID = data.last_message_id as string | null;
+		this.lastPinTimestamp = data.last_pin_timestamp ?? null;
 		return this;
 	}
 
