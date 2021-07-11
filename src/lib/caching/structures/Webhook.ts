@@ -33,12 +33,12 @@ export class Webhook extends Structure<Client | WebhookClient> {
 	public type: WebhookType;
 
 	/**
-	 * The guildID this webhook is for
+	 * The guildID the webhook is for
 	 */
 	public guildID: string | null;
 
 	/**
-	 * The channelID this webhook is for
+	 * The channelID the webhook is for
 	 */
 	public channelID!: string;
 
@@ -53,12 +53,12 @@ export class Webhook extends Structure<Client | WebhookClient> {
 	public name: string | null = null;
 
 	/**
-	 * The avatar used for this webhook
+	 * The avatar used for the webhook
 	 */
 	public avatar: string | null = null;
 
 	/**
-	 * The token for this webhook
+	 * The token for the webhook
 	 */
 	public token: string | null;
 
@@ -68,7 +68,7 @@ export class Webhook extends Structure<Client | WebhookClient> {
 	public deleted = false;
 
 	/**
-	 * @param client The client to manage this webhook
+	 * @param client The client to manage the webhook
 	 * @param data The webhook data
 	 */
 	public constructor(client: Client | WebhookClient, data: APIWebhookData, token?: string) {
@@ -96,14 +96,14 @@ export class Webhook extends Structure<Client | WebhookClient> {
 	}
 
 	/**
-	 * The guild that this webhook is in
+	 * The guild that the webhook is in
 	 */
 	get guild(): Guild | null {
 		return (this.guildID && (this.client as Client).guilds?.get(this.guildID)) || null;
 	}
 
 	/**
-	 * The channel of this webhook
+	 * The channel of the webhook
 	 */
 	get channel(): Channel | null {
 		return (this.client as Client).channels?.get(this.channelID) ?? null;
@@ -161,7 +161,7 @@ export class Webhook extends Structure<Client | WebhookClient> {
 	}
 
 	/**
-	 * Delete this webhook from the api
+	 * Delete the webhook from the api
 	 */
 	public async delete(): Promise<void> {
 		await (this.token ?

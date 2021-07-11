@@ -43,7 +43,7 @@ export class WebhookMessageBuilder extends MessageBuilder implements RequiredExc
 	public auth = false;
 
 	/**
-	 * @param webhookMessageOptions The options to create this
+	 * @param webhookMessageOptions The options to create the webhook message
 	 */
 	public constructor({ data = {}, files = [] }: WebhookMessageOptions = {}) {
 		super();
@@ -68,7 +68,7 @@ export class WebhookMessageBuilder extends MessageBuilder implements RequiredExc
 	}
 
 	/**
-	 * Adds an embed to this webhook message
+	 * Adds an embed to the webhook message
 	 * @param embed The field name
 	 */
 	public addEmbed(embed: APIEmbedData): this
@@ -114,7 +114,7 @@ export class WebhookMessageBuilder extends MessageBuilder implements RequiredExc
 	}
 
 	/**
-	 * Splits this into multiple messages.
+	 * Splits the message into multiple messages.
 	 * @param options Options to split the message by.
 	 */
 	public split(options: SplitOptions = {}): RequestOptions[] {

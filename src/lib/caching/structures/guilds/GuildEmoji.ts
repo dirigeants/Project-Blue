@@ -23,49 +23,49 @@ export class GuildEmoji extends Structure {
 	public name!: string | null;
 
 	/**
-	 * The roles this emoji is whitelisted to.
+	 * The roles the emoji is whitelisted to.
 	 * @since 0.0.1
 	 */
 	public roleIDs!: string[];
 
 	/**
-	 * User that created this emoji.
+	 * User that created the emoji.
 	 * @since 0.0.1
 	 */
 	public userID!: string | null;
 
 	/**
-	 * Whether or not this emoji must be wrapped in colons.
+	 * Whether or not the emoji must be wrapped in colons.
 	 * @since 0.0.1
 	 */
 	public requireColons!: boolean | null;
 
 	/**
-	 * Whether or not this emoji is managed.
+	 * Whether or not the emoji is managed.
 	 * @since 0.0.1
 	 */
 	public managed!: boolean | null;
 
 	/**
-	 * Whether this emoji is animated.
+	 * Whether the emoji is animated.
 	 * @since 0.0.1
 	 */
 	public animated!: boolean | null;
 
 	/**
-	 * Whether or not this emoji can be used, may be false due to loss of Server Boosts.
+	 * Whether or not the emoji can be used, may be false due to loss of Server Boosts.
 	 * @since 0.0.1
 	 */
 	public available!: boolean;
 
 	/**
-	 * The guild this emoji is from.
+	 * The guild the emoji is from.
 	 * @since 0.0.1
 	 */
 	public readonly guild: Guild;
 
 	/**
-	 * Whether the integration is deleted.
+	 * Whether the emoji is deleted.
 	 * @since 0.0.1
 	 */
 	public deleted = false;

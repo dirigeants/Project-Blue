@@ -19,10 +19,10 @@ export abstract class Action<T extends DispatchPayload = DispatchPayload, S exte
 
 	/**
 	 * @since 0.0.1
-	 * @param store The store this piece is for
+	 * @param store The store the piece is for
 	 * @param directory The base directory to the pieces folder
 	 * @param file The path from the pieces folder to the piece file
-	 * @param options The options for this piece
+	 * @param options The options for the piece
 	 */
 	public constructor(store: ActionStore, directory: string, file: readonly string[], options: ActionOptions = {}) {
 		super(store as unknown as EventStore, directory, file, { ...options, once: false, emitter: 'ws' });

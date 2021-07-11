@@ -42,7 +42,7 @@ export class Team {
 	}
 
 	/**
-	 * The owner of this Team
+	 * The owner of the team
 	 * @since 0.0.4
 	 */
 	public get owner(): TeamMember {
@@ -50,7 +50,7 @@ export class Team {
 	}
 
 	/**
-	 * Returns the teams icon url if available.
+	 * Returns the team's icon url if available.
 	 * @param options The image size, format, and other image url options.
 	 */
 	public iconURL(options?: ImageURLOptions): string | null {

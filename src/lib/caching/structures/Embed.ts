@@ -274,7 +274,7 @@ export class Embed implements APIEmbedData {
 	}
 
 	/**
-	 * Sets the image url you would like
+	 * Sets the thumbnail url you would like
 	 * @param url The url of the image
 	 */
 	public setThumbnail(url?: StringResolvable): this {
@@ -283,7 +283,7 @@ export class Embed implements APIEmbedData {
 	}
 
 	/**
-	 * Updates the image data you would like
+	 * Updates the thumbnail data you would like
 	 * @param data The fields you want to update
 	 */
 	public updateThumbnail(data: APIEmbedImageData): this {
@@ -318,7 +318,7 @@ export class Embed implements APIEmbedData {
 	}
 
 	/**
-	 * Sets the title of the embed
+	 * Sets the description of the embed
 	 * @param description The description you want
 	 */
 	public setDescription(description?: StringResolvable): this {

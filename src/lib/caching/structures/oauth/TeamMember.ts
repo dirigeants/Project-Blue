@@ -20,7 +20,7 @@ export class TeamMember {
 	public permissions: string[];
 
 	/**
-	 * The {@link User} this represents.
+	 * The {@link User} of the team member.
 	 * @since 0.0.4
 	 */
 	public user: User;

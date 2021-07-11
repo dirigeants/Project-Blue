@@ -9,7 +9,7 @@ import type { Client } from '../../../client/Client';
 export class Presence extends Structure {
 
 	/**
-	 * The member's ID this presence corresponds to.
+	 * The member's ID the presence corresponds to.
 	 * @since 0.0.1
 	 */
 	public readonly id: string;

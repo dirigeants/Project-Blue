@@ -18,13 +18,13 @@ export class Invite extends Structure {
 	public readonly id: string;
 
 	/**
-	 * The guild this invite is for.
+	 * The guild the invite is for.
 	 * @since 0.0.1
 	 */
 	public readonly guild: Guild | null;
 
 	/**
-	 * The channel this invite is for.
+	 * The channel the invite is for.
 	 * @since 0.0.1
 	 */
 	public readonly channel: Channel;
@@ -36,13 +36,13 @@ export class Invite extends Structure {
 	public inviter!: User | null;
 
 	/**
-	 * The target user for this invite.
+	 * The target user for the invite.
 	 * @since 0.0.1
 	 */
 	public targetUser!: User | null;
 
 	/**
-	 * The type of user target for this invite.
+	 * The type of user target for the invite.
 	 * @since 0.0.1
 	 * @see https://discord.com/developers/docs/resources/invite#invite-object-target-user-types
 	 */

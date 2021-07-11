@@ -61,7 +61,7 @@ export class User<T = Client> extends Structure<T> {
 	public locale?: string;
 
 	/**
-	 * Whether or not the email on this account has been verified.
+	 * Whether or not the email on the user's account has been verified.
 	 * @since 0.0.1
 	 */
 	public verified?: boolean;
@@ -94,7 +94,7 @@ export class User<T = Client> extends Structure<T> {
 	public publicFlags?: APIUserFlags;
 
 	/**
-	 * The id for the last message recieved for this user
+	 * The id for the last message received from the user
 	 * @since 0.0.3
 	 */
 	public lastMessageID: string | null = null;
@@ -115,7 +115,7 @@ export class User<T = Client> extends Structure<T> {
 	}
 
 	/**
-	 * Returns the users username and discriminator.
+	 * Returns the user's username and discriminator.
 	 * @since 0.0.1
 	 */
 	public get tag(): string {
@@ -123,7 +123,7 @@ export class User<T = Client> extends Structure<T> {
 	}
 
 	/**
-	 * Gets or Fetches a DM channel for this user.
+	 * Gets or Fetches a DM channel for the user.
 	 * @since 0.0.1
 	 * @see https://discord.com/developers/docs/resources/user#create-dm
 	 */
@@ -135,7 +135,7 @@ export class User<T = Client> extends Structure<T> {
 	}
 
 	/**
-	 * Closes a DM channel for this user if one exists.
+	 * Closes a DM channel for the user if one exists.
 	 * @since 0.0.1
 	 * @see https://discord.com/developers/docs/resources/channel#deleteclose-channel
 	 */
@@ -154,7 +154,7 @@ export class User<T = Client> extends Structure<T> {
 	}
 
 	/**
-	 * Returns the users avatar url or the default discord avatar url if they don't have a avatar.
+	 * Returns the user's avatar url or the default discord avatar url if they don't have a avatar.
 	 * @param options The image size, format and other options.
 	 */
 	public displayAvatarURL(options?: ImageURLOptions): string | null {
@@ -173,7 +173,7 @@ export class User<T = Client> extends Structure<T> {
 	}
 
 	/**
-	 * Defines toString behavior for members.
+	 * Defines toString behavior for users.
 	 * @since 0.0.1
 	 */
 	public toString(): string {

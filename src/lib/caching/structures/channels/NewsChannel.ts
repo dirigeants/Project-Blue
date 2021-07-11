@@ -18,7 +18,7 @@ export class NewsChannel extends GuildTextChannel {
 	public readonly type = ChannelType.GuildNews;
 
 	/**
-	 * Crossposts a Message in this channel.
+	 * Crossposts a Message in the channel.
 	 * @param messageID The ID of the {@link Message message} that should be crossposted.
 	 * @since 0.0.1
 	 */
@@ -29,7 +29,7 @@ export class NewsChannel extends GuildTextChannel {
 	}
 
 	/*
-	 * Subscribes a channel to crossposted messages from this channel.
+	 * Subscribes a channel to crossposted messages from the channel.
 	 * @param channel The {@link GuildTextChannel channel} that should follow this NewsChannel.
 	 * @since 0.0.4
 	 */
@@ -39,7 +39,7 @@ export class NewsChannel extends GuildTextChannel {
 	}
 
 	/**
-	 * Modifies this channel.
+	 * Modifies the channel.
 	 * @param data The channel modify options.
 	 * @param requestOptions The request options.
 	 * @since 0.0.1

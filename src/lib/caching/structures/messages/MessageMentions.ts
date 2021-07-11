@@ -8,7 +8,7 @@ import type { Guild } from '../guilds/Guild';
 export class MessageMentions {
 
 	/**
-	 * The {@link Message} this entry belongs to.
+	 * The {@link Message} the mentions belong to.
 	 * @since 0.0.1
 	 */
 	public readonly message: Message;
@@ -20,19 +20,19 @@ export class MessageMentions {
 	public readonly users: Cache<string, User>;
 
 	/**
-	 * Roles specifically mentioned in this message.
+	 * Roles specifically mentioned in the message.
 	 * @since 0.0.1
 	 */
 	public readonly roles: Cache<string, string>;
 
 	/**
-	 * Channels specifically mentioned in this message.
+	 * Channels specifically mentioned in the message.
 	 * @since 0.0.1
 	 */
 	public readonly channels: Cache<string, APIChannelData>;
 
 	/**
-	 * Whether this message mentions everyone.
+	 * Whether the message mentions everyone.
 	 * @since 0.0.1
 	 */
 	public readonly everyone: boolean;

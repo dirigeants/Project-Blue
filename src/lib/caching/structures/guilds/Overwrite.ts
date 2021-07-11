@@ -20,7 +20,7 @@ export class Overwrite extends Structure {
 	public readonly id: string;
 
 	/**
-	 * The {@link GuildChannel channel} this is for.
+	 * The {@link GuildChannel channel} the overwrite is for.
 	 * @since 0.0.1
 	 */
 	public readonly channel: GuildChannel;
@@ -32,13 +32,13 @@ export class Overwrite extends Structure {
 	public type!: 'role' | 'member';
 
 	/**
-	 * The allowed permissions in this overwrite.
+	 * The allowed permissions in the overwrite.
 	 * @since 0.0.1
 	 */
 	public allow!: Readonly<Permissions>;
 
 	/**
-	 * The denied permissions in this overwrite.
+	 * The denied permissions in the overwrite.
 	 * @since 0.0.1
 	 */
 	public deny!: Readonly<Permissions>;
@@ -58,7 +58,7 @@ export class Overwrite extends Structure {
 	}
 
 	/**
-	 * Deletes this overwrite.
+	 * Deletes the overwrite.
 	 * @param requestOptions The additional request options.
 	 */
 	public async delete(requestOptions: RequestOptions = {}): Promise<this> {
@@ -67,7 +67,7 @@ export class Overwrite extends Structure {
 	}
 
 	/**
-	 * Modifies this overwrite.
+	 * Modifies the overwrite.
 	 * @param options The modify options
 	 * @param requestOptions The additional request options.
 	 */

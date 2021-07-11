@@ -24,7 +24,7 @@ export class TextChannel extends GuildTextChannel {
 	public rateLimitPerUser!: number;
 
 	/**
-	 * Modifies this channel.
+	 * Modifies the channel.
 	 * @param data The channel modify options.
 	 * @param requestOptions The request options.
 	 * @since 0.0.1

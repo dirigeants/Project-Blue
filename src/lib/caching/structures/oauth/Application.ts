@@ -60,7 +60,7 @@ export class Application {
 	public owner: User;
 
 	/**
-	 * If this application is a game sold on Discord, this field will be the summary field for the store page of its primary sku.
+	 * If the application is a game sold on Discord, this field will be the summary field for the store page of its primary sku.
 	 * @since 0.0.1
 	 */
 	public summary: string;
@@ -79,25 +79,25 @@ export class Application {
 	public team: Team | null;
 
 	/**
-	 * If this application is a game sold on Discord, this field will be the guild to which it has been linked.
+	 * If the application is a game sold on Discord, this field will be the guild to which it has been linked.
 	 * @since 0.0.1
 	 */
 	public guildID: string | null;
 
 	/**
-	 * If this application is a game sold on Discord, this field will be the id of the "Game SKU" that is created, if exists.
+	 * If the application is a game sold on Discord, this field will be the id of the "Game SKU" that is created, if exists.
 	 * @since 0.0.1
 	 */
 	public primarySkuID: string | null;
 
 	/**
-	 * If this application is a game sold on Discord, this field will be the URL slug that links to the store page.
+	 * If the application is a game sold on Discord, this field will be the URL slug that links to the store page.
 	 * @since 0.0.1
 	 */
 	public slug: string | null;
 
 	/**
-	 * If this application is a game sold on Discord, this field will be the hash of the image on store embeds.
+	 * If the application is a game sold on Discord, this field will be the hash of the image on store embeds.
 	 * @since 0.0.1
 	 */
 	public coverImage: string | null;
@@ -122,7 +122,7 @@ export class Application {
 	}
 
 	/**
-	 * The guild for this application if applicable.
+	 * The guild for the application if applicable.
 	 * @since 0.0.4
 	 */
 	public get guild(): Guild | null {

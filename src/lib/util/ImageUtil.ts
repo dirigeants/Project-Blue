@@ -5,7 +5,7 @@ import { promises as fsp } from 'fs';
 import { MessageAttachment } from '../caching/structures/messages/MessageAttachment';
 
 /**
- * @param buffer The buffer the sniff the magic numbers from.
+ * @param buffer The buffer to sniff the magic numbers from.
  * @see https://en.wikipedia.org/wiki/GIF
  * @private
  */
@@ -21,7 +21,7 @@ function isGif(buffer: Buffer): boolean {
 }
 
 /**
- * @param buffer The buffer the sniff the magic numbers from.
+ * @param buffer The buffer to sniff the magic numbers from.
  * @see https://en.wikipedia.org/wiki/JPEG
  * @private
  */
@@ -34,7 +34,7 @@ function isJpeg(buffer: Buffer): boolean {
 }
 
 /**
- * @param buffer The buffer the sniff the magic numbers from.
+ * @param buffer The buffer to sniff the magic numbers from.
  * @see https://en.wikipedia.org/wiki/Portable_Network_Graphics
  * @private
  */
@@ -52,7 +52,7 @@ function isPng(buffer: Buffer): boolean {
 }
 
 /**
- * @param buffer The buffer the sniff the magic numbers from.
+ * @param buffer The buffer to sniff the magic numbers from.
  * @see https://en.wikipedia.org/wiki/WebP
  * @private
  */

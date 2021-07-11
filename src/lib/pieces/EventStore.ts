@@ -24,7 +24,7 @@ export class EventStore extends Store<Event> {
 	}
 
 	/**
-	 * Loads a piece into Klasa so it can be saved in this store.
+	 * Loads a piece into Klasa so it can be saved in the store.
 	 * @since 0.0.1
 	 * @param file A string or array of strings showing where the file is located.
 	 * @param core If the file is located in the core directory or not

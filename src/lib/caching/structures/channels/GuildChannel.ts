@@ -42,13 +42,13 @@ export abstract class GuildChannel extends Channel {
 	public permissionOverwrites!: OverwriteStore;
 
 	/**
-	 * The {@link GuildChannelInviteStore invites} store for this channel.
+	 * The {@link GuildChannelInviteStore invites} store for the channel.
 	 * @since 0.0.3
 	 */
 	public readonly invites: GuildChannelInviteStore;
 
 	/**
-	 * The {@link Guild guild} this channel belongs to.
+	 * The {@link Guild guild} the channel belongs to.
 	 * @since 0.0.1
 	 */
 	public readonly guild: Guild;
@@ -62,7 +62,7 @@ export abstract class GuildChannel extends Channel {
 	}
 
 	/**
-	 * The parent {@type CategoryChannel channel} for this channel.
+	 * The parent {@type CategoryChannel channel} for the channel.
 	 * @since 0.0.1
 	 */
 	public get parent(): CategoryChannel | null {
@@ -108,8 +108,8 @@ export abstract class GuildChannel extends Channel {
 	}
 
 	/**
-	 * Checks what permissions a {@link GuildMember member} or {@link Role role} has in this {@link GuildChannel channel}
-	 * @param target The guild member you are checking permissions for
+	 * Checks what permissions a {@link GuildMember member} or {@link Role role} has in the {@link GuildChannel channel}
+	 * @param target The guild member or role you are checking permissions for
 	 * @param guildScope If we should take into account guild scoped permissions, or just overwrites
 	 */
 	public permissionsFor(target: GuildMember | Role, guildScope = true): Readonly<Permissions> {
@@ -129,7 +129,7 @@ export abstract class GuildChannel extends Channel {
 	}
 
 	/**
-	 * Modifies this channel.
+	 * Modifies the channel.
 	 * @param data The channel modify options.
 	 * @param requestOptions The request options.
 	 * @since 0.0.1

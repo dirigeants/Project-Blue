@@ -11,7 +11,7 @@ export class ActionStore extends Store<Action> {
 
 	/**
 	 * @since 0.0.1
-	 * @param client The client this Store was created with
+	 * @param client The client the Store was created with
 	 */
 	public constructor(client: Client) {
 		super(client, 'actions', Action as PieceConstructor<Action>);

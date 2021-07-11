@@ -12,13 +12,13 @@ import type { GuildBasedChannel } from '../../../util/Util';
 export class GuildWidget {
 
 	/**
-	 * The {@link Client client} this store belongs to.
+	 * The {@link Client client} the widget belongs to.
 	 * @since 0.0.1
 	 */
 	public readonly client: Client;
 
 	/**
-	 * The {@link Guild guild} this store belongs to.
+	 * The {@link Guild guild} the widget belongs to.
 	 * @since 0.0.1
 	 */
 	public readonly guild: Guild;

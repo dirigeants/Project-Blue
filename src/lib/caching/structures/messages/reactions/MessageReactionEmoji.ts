@@ -19,7 +19,7 @@ export class MessageReactionEmoji implements APIEmojiPartial {
 	public readonly name: string | null;
 
 	/**
-	 * Whether this emoji is animated.
+	 * Whether the emoji is animated.
 	 * @since 0.0.1
 	 */
 	public readonly animated: boolean;

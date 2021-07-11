@@ -35,7 +35,7 @@ export class Message extends WebhookMessage<Client> {
 	public readonly guild: Guild | null;
 
 	/**
-	 * Author of this message.
+	 * Author of the message.
 	 * @since 0.0.1
 	 */
 	public readonly author: User;
@@ -59,7 +59,7 @@ export class Message extends WebhookMessage<Client> {
 	public readonly attachments: Cache<string, MessageAttachment>;
 
 	/**
-	 * When this message was edited (or null if never).
+	 * When the message was edited (or null if never).
 	 * @since 0.0.1
 	 */
 	public editedTimestamp!: number | null;
@@ -89,7 +89,7 @@ export class Message extends WebhookMessage<Client> {
 	public readonly nonce?: string | null;
 
 	/**
-	 * Whether or not this message is pinned.
+	 * Whether or not the message is pinned.
 	 * @since 0.0.1
 	 */
 	public pinned!: boolean;
@@ -145,7 +145,7 @@ export class Message extends WebhookMessage<Client> {
 	}
 
 	/**
-	 * When this message was sent.
+	 * When the message was sent.
 	 * @since 0.0.1
 	 */
 	public get createdAt(): Date {
@@ -153,7 +153,7 @@ export class Message extends WebhookMessage<Client> {
 	}
 
 	/**
-	 * When this message was edited (or null if never).
+	 * When the message was edited (or null if never).
 	 * @since 0.0.1
 	 */
 	public get editedAt(): Date | null {
@@ -161,7 +161,7 @@ export class Message extends WebhookMessage<Client> {
 	}
 
 	/**
-	 * If the client can delete this message.
+	 * If the client can delete the message.
 	 * @since 0.0.1
 	 */
 	public get deletable(): boolean | null {
@@ -171,7 +171,7 @@ export class Message extends WebhookMessage<Client> {
 	}
 
 	/**
-	 * If the client can edit this message.
+	 * If the client can edit the message.
 	 * @since 0.0.1
 	 */
 	public get editable(): boolean {
@@ -179,7 +179,7 @@ export class Message extends WebhookMessage<Client> {
 	}
 
 	/**
-	 * If the client can pin this message.
+	 * If the client can pin the message.
 	 * @since 0.0.1
 	 */
 	public get pinnable(): boolean | null {
@@ -189,7 +189,7 @@ export class Message extends WebhookMessage<Client> {
 	}
 
 	/**
-	 * If the client can react to this message.
+	 * If the client can react to the message.
 	 * @since 0.0.1
 	 */
 	public get reactable(): boolean | null {
@@ -199,7 +199,7 @@ export class Message extends WebhookMessage<Client> {
 	}
 
 	/**
-	 * The link to this message
+	 * The link to the message
 	 * @since 0.0.4
 	 */
 	get link(): string {
@@ -216,7 +216,7 @@ export class Message extends WebhookMessage<Client> {
 	}
 
 	/**
-	 * Crosspost this message.
+	 * Crosspost the message.
 	 * @since 0.0.4
 	 */
 	public crosspost(): Promise<this> {
@@ -225,7 +225,7 @@ export class Message extends WebhookMessage<Client> {
 	}
 
 	/**
-	 * Sends a message to the channel.
+	 * Edits the message.
 	 * @param data The {@link MessageBuilder builder} to send.
 	 * @since 0.0.2
 	 * @see https://discord.com/developers/docs/resources/channel#edit-message
@@ -236,7 +236,7 @@ export class Message extends WebhookMessage<Client> {
 	 */
 	public edit(data: MessageOptions): Promise<Message>;
 	/**
-	 * Sends a message to the channel.
+	 * Edits the message.
 	 * @param data A callback with a {@link MessageBuilder builder} as an argument.
 	 * @since 0.0.1
 	 * @see https://discord.com/developers/docs/resources/channel#edit-message
@@ -271,7 +271,7 @@ export class Message extends WebhookMessage<Client> {
 	}
 
 	/**
-	 * Defines the toString behavior of this structure.
+	 * Defines the toString behavior of messages.
 	 * @since 0.0.4
 	 */
 	public toString(): string {

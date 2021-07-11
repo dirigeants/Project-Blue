@@ -153,7 +153,7 @@ export class Guild extends Structure {
 	public readonly integrations: IntegrationStore;
 
 	/**
-	 * The guild's store of integrations.
+	 * The guild's shard.
 	 * @since 0.0.4
 	 */
 	public readonly shard: WebSocketShard;
@@ -209,13 +209,13 @@ export class Guild extends Structure {
 	public rulesChannelID!: string | null;
 
 	/**
-	 * When this guild was joined at.
+	 * When the guild was joined at.
 	 * @since 0.0.1
 	 */
 	public joinedTimestamp!: number | null;
 
 	/**
-	 * Whether this is considered a large guild.
+	 * Whether the is considered a large guild.
 	 * @since 0.0.1
 	 */
 	public large!: boolean | null;
@@ -227,34 +227,34 @@ export class Guild extends Structure {
 	public unavailable: boolean;
 
 	/**
-	 * Total number of members in this guild. This field will only be present if a guild was received from the `GUILD_CREATE` event.
+	 * Total number of members in the guild. This field will only be present if a guild was received from the `GUILD_CREATE` event.
 	 * @since 0.0.1
 	 */
 	public memberCount!: number | null;
 
 	/**
-	 * A store of voice states for this guild.
+	 * A store of voice states for the guild.
 	 * @since 0.0.1
 	 * @see https://discord.com/developers/docs/resources/voice#voice-state-object
 	 */
 	public readonly voiceStates: VoiceStateStore;
 
 	/**
-	 * A store of members for this guild.
+	 * A store of members for the guild.
 	 * @since 0.0.1
 	 * @see https://discord.com/developers/docs/resources/guild#guild-member-object
 	 */
 	public readonly members: GuildMemberStore;
 
 	/**
-	 * A store of channels for this guild.
+	 * A store of channels for the guild.
 	 * @since 0.0.1
 	 * @see https://discord.com/developers/docs/resources/channel#channel-object
 	 */
 	public readonly channels: GuildChannelStore;
 
 	/**
-	 * A store of presences for this guild.
+	 * A store of presences for the guild.
 	 * @since 0.0.1
 	 * @see https://discord.com/developers/docs/topics/gateway#presence-update
 	 */
@@ -292,14 +292,14 @@ export class Guild extends Structure {
 	public banner!: string | null;
 
 	/**
-	 * The guild's guild Boosting tier
+	 * The guild's Server Boost level.
 	 * @since 0.0.1
 	 * @see https://discord.com/developers/docs/resources/guild#guild-object-premium-tier
 	 */
 	public premiumTier!: GuildPremiumTier | null;
 
 	/**
-	 * The number of boosts this guild currently has.
+	 * The number of boosts the guild currently has.
 	 * @since 0.0.1
 	 */
 	public premiumSubscriptionCount!: number | null;
@@ -317,19 +317,19 @@ export class Guild extends Structure {
 	public publicUpdatesChannel!: string | null;
 
 	/**
-	 * The approximate number of members in this guild, returned from the `GET /guild/<id>` endpoint when `with_counts` is `true`.
+	 * The approximate number of members in the guild, returned from the `GET /guild/<id>` endpoint when `with_counts` is `true`.
 	 * @since 0.0.1
 	 */
 	public approximateMemberCount?: number;
 
 	/**
-	 * The approximate number of online members in this guild, returned from the `GET /guild/<id>` endpoint when `with_counts` is `true`.
+	 * The approximate number of online members in the guild, returned from the `GET /guild/<id>` endpoint when `with_counts` is `true`.
 	 * @since 0.0.1
 	 */
 	public approximatePresenceCount?: number;
 
 	/**
-	 * The widget for this guild.
+	 * The widget for the guild.
 	 * @since 0.0.1
 	 */
 	public widget: GuildWidget;
@@ -366,7 +366,7 @@ export class Guild extends Structure {
 	}
 
 	/**
-	 * When this guild was joined at, as a Date.
+	 * When the guild was joined at, as a Date.
 	 * @since 0.0.1
 	 */
 	public get joinedAt(): Date | null {
@@ -374,7 +374,7 @@ export class Guild extends Structure {
 	}
 
 	/**
-	 * The Client's member of this guild.
+	 * The Client as a member of the guild.
 	 * @since 0.0.1
 	 */
 	public get me(): GuildMember | null {
@@ -383,7 +383,7 @@ export class Guild extends Structure {
 	}
 
 	/**
-	 * The owner of this guild.
+	 * The owner of the guild.
 	 * @since 0.0.1
 	 */
 	public get owner(): GuildMember | null {
@@ -497,7 +497,7 @@ export class Guild extends Structure {
 	}
 
 	/**
-	 * Defines the toString behavior of this structure.
+	 * Defines the toString behavior of guilds.
 	 * @since 0.0.4
 	 */
 	public toString(): string {
@@ -727,14 +727,14 @@ export type GuildPruneOptions = GuildPruneDryOptions | GuildPruneNonDryOptions;
  */
 export interface GuildVanityURL {
 	/**
-	 * The code of this invite.
+	 * The code of the invite.
 	 * @since 0.0.1
 	 * @example "discord"
 	 */
 	code: string;
 
 	/**
-	 * The amount of uses this invite has.
+	 * The amount of uses the invite has.
 	 * @since 0.0.1
 	 * @example 42
 	 */

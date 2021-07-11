@@ -19,7 +19,7 @@ import type { Message } from '../messages/Message';
 export class DMChannel extends Channel {
 
 	/**
-	 * The typing handler for this channel.
+	 * The typing handler for the channel.
 	 * @since 0.0.1
 	 */
 	public readonly typing: Typing;
@@ -32,13 +32,13 @@ export class DMChannel extends Channel {
 	public readonly type = ChannelType.DM;
 
 	/**
-	 * The pins store for this channel.
+	 * The pins store for the channel.
 	 * @since 0.0.4
 	 */
 	public readonly pins: ChannelPinsStore;
 
 	/**
-	 * The id of the last message sent in this channel (may not point to an existing or valid message).
+	 * The id of the last message sent in the channel (may not point to an existing or valid message).
 	 * @since 0.0.1
 	 */
 	public lastMessageID!: string | null;
@@ -50,7 +50,7 @@ export class DMChannel extends Channel {
 	public recipients!: User[];
 
 	/**
-	 * The message store for this channel.
+	 * The message store for the channel.
 	 * @since 0.0.1
 	 */
 	public readonly messages: MessageStore;

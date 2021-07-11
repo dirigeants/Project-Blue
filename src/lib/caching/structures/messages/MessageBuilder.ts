@@ -65,7 +65,7 @@ export class MessageBuilder implements RequiredExcept<MessageOptions, 'auth' | '
 	}
 
 	/**
-	 * Sets content of this message
+	 * Sets content of the message
 	 * @param content The content to set
 	 */
 	public setContent(content?: string | null): this {
@@ -74,7 +74,7 @@ export class MessageBuilder implements RequiredExcept<MessageOptions, 'auth' | '
 	}
 
 	/**
-	 * Sets the embed of this message
+	 * Sets the embed of the message
 	 * @param embed The embed to set
 	 */
 	public setEmbed(embed?: APIEmbedData | null): this
@@ -85,7 +85,7 @@ export class MessageBuilder implements RequiredExcept<MessageOptions, 'auth' | '
 	}
 
 	/**
-	 * Sets the nonce of this message
+	 * Sets the nonce of the message
 	 * @param nonce The nonce to set
 	 */
 	public setNonce(nonce?: number | string): this {
@@ -94,7 +94,7 @@ export class MessageBuilder implements RequiredExcept<MessageOptions, 'auth' | '
 	}
 
 	/**
-	 * Sets if this message should be tts
+	 * Sets if the message should be tts
 	 * @param tts The tts of this message
 	 */
 	public setTTS(tts: boolean): this {
@@ -143,7 +143,7 @@ export class MessageBuilder implements RequiredExcept<MessageOptions, 'auth' | '
 	}
 
 	/**
-	 * Adds a message attachment to this message
+	 * Adds a message attachment to the message
 	 * @param file The attachment
 	 */
 	public addFile(file: File): this {
@@ -152,7 +152,7 @@ export class MessageBuilder implements RequiredExcept<MessageOptions, 'auth' | '
 	}
 
 	/**
-	 * Splices a message attachment to this message
+	 * Splices a message attachment to the message
 	 * @param index The index to splice at
 	 * @param deleteCount The number of attachments to delete
 	 * @param file The attachment to add
@@ -164,7 +164,7 @@ export class MessageBuilder implements RequiredExcept<MessageOptions, 'auth' | '
 	}
 
 	/**
-	 * Splits this into multiple messages.
+	 * Splits the message into multiple messages.
 	 * @param options Options to split the message by.
 	 */
 	public split(options: SplitOptions = {}): RequestOptions[] {

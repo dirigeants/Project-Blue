@@ -10,13 +10,13 @@ import type { Guild } from './Guild';
 export class VoiceState extends Structure {
 
 	/**
-	 * The user id this voice state is for.
+	 * The user id the voice state is for.
 	 * @since 0.0.1
 	 */
 	public readonly id: string;
 
 	/**
-	 * The channel id this user is connected to.
+	 * The channel id the user is connected to.
 	 * @since 0.0.1
 	 */
 	public channelID!: string | null;
@@ -28,37 +28,37 @@ export class VoiceState extends Structure {
 	public sessionID!: string;
 
 	/**
-	 * Whether or not this user is deafened by the server.
+	 * Whether or not the user is deafened by the server.
 	 * @since 0.0.1
 	 */
 	public deaf!: boolean;
 
 	/**
-	 * Whether or not this user is muted by the server.
+	 * Whether or not the user is muted by the server.
 	 * @since 0.0.1
 	 */
 	public mute!: boolean;
 
 	/**
-	 * Whether or not this user is locally deafened.
+	 * Whether or not the user is locally deafened.
 	 * @since 0.0.1
 	 */
 	public selfDeaf!: boolean;
 
 	/**
-	 * Whether or not this user is locally muted.
+	 * Whether or not the user is locally muted.
 	 * @since 0.0.1
 	 */
 	public selfMute!: boolean;
 
 	/**
-	 * Whether or not this user is streaming using "Go Live".
+	 * Whether or not the user is streaming using "Go Live".
 	 * @since 0.0.1
 	 */
 	public selfStream!: boolean | null;
 
 	/**
-	 * Whether or not this user is muted by the current user.
+	 * Whether or not the user is muted by the current user.
 	 * @since 0.0.1
 	 */
 	public suppress!: boolean;

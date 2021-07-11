@@ -25,19 +25,19 @@ export interface SendOptions {
 export abstract class GuildTextChannel extends GuildChannel {
 
 	/**
-	 * The message store for this channel.
+	 * The message store for the channel.
 	 * @since 0.0.1
 	 */
 	public readonly messages: MessageStore;
 
 	/**
-	 * The pins store for this channel.
+	 * The pins store for the channel.
 	 * @since 0.0.4
 	 */
 	public readonly pins: ChannelPinsStore;
 
 	/**
-	 * The typing handler for this channel.
+	 * The typing handler for the channel.
 	 * @since 0.0.1
 	 */
 	public readonly typing: Typing;
@@ -55,13 +55,13 @@ export abstract class GuildTextChannel extends GuildChannel {
 	public nsfw!: boolean;
 
 	/**
-	 * The id of the last message sent in this channel (may not point to an existing or valid message).
+	 * The id of the last message sent in the channel (may not point to an existing or valid message).
 	 * @since 0.0.1
 	 */
 	public lastMessageID!: string | null;
 
 	/**
-	 * When the last pinned message was pinned.
+	 * When the last pinned message was pinned in the channel.
 	 * @since 0.0.1
 	 */
 	public lastPinTimestamp!: string | null;

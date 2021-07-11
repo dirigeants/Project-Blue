@@ -42,7 +42,7 @@ export class MessageReaction extends Structure {
 	public readonly users: MessageReactionUserStore;
 
 	/**
-	 * The {@link Message message} instance this is tied to.
+	 * The {@link Message message} instance the reaction is tied to.
 	 * @since 0.0.1
 	 */
 	public readonly message: Message;
@@ -65,7 +65,7 @@ export class MessageReaction extends Structure {
 	}
 
 	/**
-	 * Defines the JSON.stringify behavior of this structure.
+	 * Defines the JSON.stringify behavior of message reactions.
 	 * @since 0.0.1
 	 */
 	public toJSON(): Record<string, unknown> {

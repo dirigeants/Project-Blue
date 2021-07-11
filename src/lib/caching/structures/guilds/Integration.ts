@@ -14,7 +14,7 @@ import type { User } from '../User';
 export class Integration extends Structure {
 
 	/**
-	 * The {@link Guild guild} this integration belongs to.
+	 * The {@link Guild guild} the integration belongs to.
 	 * @since 0.0.1
 	 */
 	public readonly guild: Guild;
@@ -38,25 +38,25 @@ export class Integration extends Structure {
 	public readonly type: string;
 
 	/**
-	 * Whether this integration is enabled.
+	 * Whether the integration is enabled.
 	 * @since 0.0.1
 	 */
 	public readonly enabled: boolean;
 
 	/**
-	 * Whether this integration is syncing.
+	 * Whether the integration is syncing.
 	 * @since 0.0.1
 	 */
 	public readonly syncing: boolean;
 
 	/**
-	 * The {@link Role role} ID that this integration uses for "subscribers".
+	 * The {@link Role role} ID that the integration uses for "subscribers".
 	 * @since 0.0.1
 	 */
 	public readonly roleID: string;
 
 	/**
-	 * The {@link User user} ID for this integration.
+	 * The {@link User user} ID for the integration.
 	 * @since 0.0.1
 	 */
 	public readonly userID: string;
@@ -68,7 +68,7 @@ export class Integration extends Structure {
 	public readonly account: APIIntegrationAccountData;
 
 	/**
-	 * Whether emoticons should be synced for this integration (twitch only currently).
+	 * Whether emoticons should be synced for the integration (twitch only currently).
 	 * @since 0.0.1
 	 */
 	public enableEmoticons!: boolean | null;
@@ -87,7 +87,7 @@ export class Integration extends Structure {
 	public expireGracePeriod!: number;
 
 	/**
-	 * When this integration was last synced.
+	 * When the integration was last synced.
 	 * @since 0.0.1
 	 */
 	public syncedTimestamp!: number;
@@ -114,7 +114,7 @@ export class Integration extends Structure {
 	}
 
 	/**
-	 * The {@link User user} for this integration.
+	 * The {@link User user} for the integration.
 	 * @since 0.0.1
 	 */
 	public get user(): User | null {
@@ -122,7 +122,7 @@ export class Integration extends Structure {
 	}
 
 	/**
-	 * The {@link Role role} that this integration uses for "subscribers".
+	 * The {@link Role role} that the integration uses for "subscribers".
 	 * @since 0.0.1
 	 */
 	public get role(): Role | null {
@@ -130,7 +130,7 @@ export class Integration extends Structure {
 	}
 
 	/**
-	 * Modifies the behaviour and settings of the integration.
+	 * Modifies the behavior and settings of the integration.
 	 * @since 0.0.1
 	 * @param options The settings to modify in the integration.
 	 * @param requestOptions The additional request options.
@@ -196,7 +196,7 @@ export interface IntegrationModifyOptions {
 	expire_grace_period?: number | null;
 
 	/**
-	 * Whether emoticons should be synced for this integration (twitch only currently).
+	 * Whether emoticons should be synced for the integration (twitch only currently).
 	 * @since 0.0.1
 	 */
 	enable_emoticons?: boolean | null;

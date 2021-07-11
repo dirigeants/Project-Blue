@@ -24,7 +24,7 @@ export class Ban extends Structure {
 	public readonly reason: string | null;
 
 	/**
-	 * The guild this ban is from.
+	 * The guild the ban is from.
 	 * @since 0.0.1
 	 */
 	public readonly guild: Guild;
